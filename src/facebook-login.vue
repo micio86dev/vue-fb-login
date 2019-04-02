@@ -42,9 +42,11 @@ export default {
       }
     },
     logout() {
+      console.log('Ok logout DAIII');
       this.isWorking = true;
       fbLogout()
         .then(response => {
+          console.log('Ok logout DAIII AZZZZ');
           this.isWorking = false;
           this.isConnected = false;
           this.$emit('logout', response)

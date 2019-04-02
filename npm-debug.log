@@ -1,0 +1,208 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'publish',
+1 verbose cli   '--access',
+1 verbose cli   'public' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/micio/Scrivania/facebook-login-vuejs',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/micio/.npm/@micio86dev/vue-fb-login/1.0.0/package.tgz not in flight; packing
+9 info lifecycle @micio86dev/vue-fb-login@1.0.0~prepublish: @micio86dev/vue-fb-login@1.0.0
+10 silly lifecycle @micio86dev/vue-fb-login@1.0.0~prepublish: no script for prepublish, continuing
+11 verbose tar pack [ '/home/micio/.npm/@micio86dev/vue-fb-login/1.0.0/package.tgz',
+11 verbose tar pack   '/home/micio/Scrivania/facebook-login-vuejs' ]
+12 verbose tarball /home/micio/.npm/@micio86dev/vue-fb-login/1.0.0/package.tgz
+13 verbose folder /home/micio/Scrivania/facebook-login-vuejs
+14 verbose addLocalTarball adding from inside cache /home/micio/.npm/@micio86dev/vue-fb-login/1.0.0/package.tgz
+15 silly cache afterAdd @micio86dev/vue-fb-login@1.0.0
+16 verbose afterAdd /home/micio/.npm/@micio86dev/vue-fb-login/1.0.0/package/package.json not in flight; writing
+17 verbose afterAdd /home/micio/.npm/@micio86dev/vue-fb-login/1.0.0/package/package.json written
+18 silly publish { _args:
+18 silly publish    [ [ 'vue-fb-login@^1.0.0',
+18 silly publish        '/home/micio/Scrivania/Progetti/vinci-il-coniglietto-client' ] ],
+18 silly publish   _from: '.',
+18 silly publish   _inCache: true,
+18 silly publish   _installable: true,
+18 silly publish   _location: '/vue-fb-login',
+18 silly publish   _nodeVersion: '7.10.1',
+18 silly publish   _npmOperationalInternal:
+18 silly publish    { host: 's3://npm-registry-packages',
+18 silly publish      tmp: 'tmp/vue-fb-login-1.0.0.tgz_1504959165631_0.10133141069673002' },
+18 silly publish   _npmUser: { email: 'iliran11@gmail.com', name: 'iliran11' },
+18 silly publish   _npmVersion: '4.2.0',
+18 silly publish   _phantomChildren: {},
+18 silly publish   _requested:
+18 silly publish    { name: 'vue-fb-login',
+18 silly publish      raw: 'vue-fb-login@^1.0.0',
+18 silly publish      rawSpec: '^2.1.3',
+18 silly publish      scope: null,
+18 silly publish      spec: '>=2.1.3 <3.0.0',
+18 silly publish      type: 'range' },
+18 silly publish   _requiredBy: [ '/' ],
+18 silly publish   _resolved: 'https://registry.npmjs.org/vue-fb-login/-/vue-fb-login-1.0.0.tgz',
+18 silly publish   _shasum: 'ece11c816cbb82b82649bd9ba702cb4be1cf2d96',
+18 silly publish   _shrinkwrap: null,
+18 silly publish   _spec: 'vue-fb-login@^1.0.0',
+18 silly publish   _where: '/home/micio/Scrivania/Progetti/vinci-il-coniglietto-client',
+18 silly publish   author: { name: 'iliran11' },
+18 silly publish   browserslist: [ '> 1%', 'last 2 versions', 'not ie <= 8' ],
+18 silly publish   dependencies: {},
+18 silly publish   description: 'Easy Way To Integrate Your Facebook App',
+18 silly publish   devDependencies:
+18 silly publish    { autoprefixer: '^6.7.2',
+18 silly publish      'babel-core': '^6.22.1',
+18 silly publish      'babel-eslint': '^7.1.1',
+18 silly publish      'babel-loader': '^6.2.10',
+18 silly publish      'babel-plugin-istanbul': '^4.1.1',
+18 silly publish      'babel-plugin-transform-runtime': '^6.22.0',
+18 silly publish      'babel-preset-env': '^1.3.2',
+18 silly publish      'babel-preset-stage-2': '^6.22.0',
+18 silly publish      'babel-register': '^6.22.0',
+18 silly publish      chai: '^3.5.0',
+18 silly publish      chalk: '^1.1.3',
+18 silly publish      chromedriver: '^2.27.2',
+18 silly publish      'connect-history-api-fallback': '^1.3.0',
+18 silly publish      'copy-webpack-plugin': '^4.0.1',
+18 silly publish      'cross-env': '^4.0.0',
+18 silly publish      'cross-spawn': '^5.0.1',
+18 silly publish      'css-loader': '^0.28.0',
+18 silly publish      eslint: '^3.19.0',
+18 silly publish      'eslint-config-standard': '^6.2.1',
+18 silly publish      'eslint-friendly-formatter': '^2.0.7',
+18 silly publish      'eslint-loader': '^1.7.1',
+18 silly publish      'eslint-plugin-html': '^2.0.0',
+18 silly publish      'eslint-plugin-promise': '^3.4.0',
+18 silly publish      'eslint-plugin-standard': '^2.0.1',
+18 silly publish      'eventsource-polyfill': '^0.9.6',
+18 silly publish      express: '^4.14.1',
+18 silly publish      'extract-text-webpack-plugin': '^2.0.0',
+18 silly publish      'file-loader': '^0.11.1',
+18 silly publish      'friendly-errors-webpack-plugin': '^1.1.3',
+18 silly publish      'html-webpack-plugin': '^2.28.0',
+18 silly publish      'http-proxy-middleware': '^0.17.3',
+18 silly publish      'inject-loader': '^3.0.0',
+18 silly publish      karma: '^1.4.1',
+18 silly publish      'karma-coverage': '^1.1.1',
+18 silly publish      'karma-mocha': '^1.3.0',
+18 silly publish      'karma-phantomjs-launcher': '^1.0.2',
+18 silly publish      'karma-phantomjs-shim': '^1.4.0',
+18 silly publish      'karma-sinon-chai': '^1.3.1',
+18 silly publish      'karma-sourcemap-loader': '^0.3.7',
+18 silly publish      'karma-spec-reporter': '0.0.30',
+18 silly publish      'karma-webpack': '^2.0.2',
+18 silly publish      lolex: '^1.5.2',
+18 silly publish      mocha: '^3.2.0',
+18 silly publish      nightwatch: '^0.9.12',
+18 silly publish      opn: '^4.0.2',
+18 silly publish      'optimize-css-assets-webpack-plugin': '^1.3.0',
+18 silly publish      ora: '^1.2.0',
+18 silly publish      'phantomjs-prebuilt': '^2.1.14',
+18 silly publish      rimraf: '^2.6.0',
+18 silly publish      'selenium-server': '^3.0.1',
+18 silly publish      semver: '^5.3.0',
+18 silly publish      shelljs: '^0.7.6',
+18 silly publish      sinon: '^2.1.0',
+18 silly publish      'sinon-chai': '^2.8.0',
+18 silly publish      'stats-webpack-plugin': '^0.6.0',
+18 silly publish      'url-loader': '^0.5.8',
+18 silly publish      vue: '^2.3.3',
+18 silly publish      'vue-loader': '^12.1.0',
+18 silly publish      'vue-style-loader': '^3.0.1',
+18 silly publish      'vue-template-compiler': '^2.3.3',
+18 silly publish      webpack: '^2.6.1',
+18 silly publish      'webpack-bundle-analyzer': '^2.2.1',
+18 silly publish      'webpack-dev-middleware': '^1.10.0',
+18 silly publish      'webpack-hot-middleware': '^2.18.0',
+18 silly publish      'webpack-merge': '^4.1.0' },
+18 silly publish   directories: { example: 'example', test: 'test' },
+18 silly publish   dist:
+18 silly publish    { shasum: '6f76310335336a2e1c273b531f0315a744089914',
+18 silly publish      tarball: 'https://registry.npmjs.org/vue-fb-login/-/vue-fb-login-1.0.0.tgz' },
+18 silly publish   engines: { node: '>= 4.0.0', npm: '>= 3.0.0' },
+18 silly publish   main: './dist/facebook-login.min.js',
+18 silly publish   maintainers: [ { name: 'iliran11', email: 'iliran11@gmail.com' } ],
+18 silly publish   name: '@micio86dev/vue-fb-login',
+18 silly publish   optionalDependencies: {},
+18 silly publish   private: false,
+18 silly publish   scripts:
+18 silly publish    { bundle: 'npm run bundle:min && npm run bundle:full',
+18 silly publish      'bundle:full': 'cross-env MINIFY=false webpack --progress --config build/webpack.bundle.conf.js',
+18 silly publish      'bundle:min': 'cross-env MINIFY=true webpack --progress --config build/webpack.bundle.conf.js',
+18 silly publish      e2e: 'node test/e2e/runner.js',
+18 silly publish      example: 'cd .\\example\\ && npm run dev',
+18 silly publish      lint: 'eslint --ext .js,.vue src test/unit/specs test/e2e/specs',
+18 silly publish      start: 'npm run example',
+18 silly publish      test: 'npm run unit && npm run e2e',
+18 silly publish      unit: 'cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run' },
+18 silly publish   version: '1.0.0',
+18 silly publish   repository:
+18 silly publish    { type: 'git',
+18 silly publish      url: 'git+https://github.com/micio86dev/vue-fb-login.git' },
+18 silly publish   license: 'ISC',
+18 silly publish   bugs: { url: 'https://github.com/micio86dev/vue-fb-login/issues' },
+18 silly publish   homepage: 'https://github.com/micio86dev/vue-fb-login#readme',
+18 silly publish   readme: '[![npm](https://img.shields.io/npm/dm/vue-fb-login.svg)](https://www.npmjs.com/package/vue-fb-login)\n\nDescription\n======\nVue Component that  lets you drop it into your existing project and get the benefits of Facebook Login quickly.\n\nExample\n======\nsource code of the example can be found in [example](https://github.com/iliran11/facebook-login-vue/tree/master/example) folder.\nthe actual component is just the button (:\n![app preview](http://i.imgur.com/YhzfUkI.gif "")\n\n\n\nInstallation\n======\n\n```\nnpm i vue-fb-login\n```\n\nExample Usage\n======\n\n**my-component.vue**\n\n```javascript\nimport facebookLogin from \'vue-fb-login\';\n\nVue.component(\'my-component\', {\n    components: {\n        facebookLogin\n    }\n});\n```\n\n```xml\n    <facebook-login class="button"\n      appId="326022817735322"\n      @login="getUserData"\n      @logout="onLogout"\n      @get-initial-status="getUserData">\n    </facebook-login>\n```\n\nProps\n======\n\n\n| Props \t| Type \t| Default \t| Notes \t|\n|---------------\t|----------\t|---------------------------------------------\t|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------\t|\n| appId \t| string \t| None.It is a required prop. \t|  \t|\n| version \t| string \t| \'v2.9\' \t| refer to [Facebook Docs](https://developers.facebook.com/docs/apps/changelog/) for explanation on available values \t|\n| loginLabel \t| string \t| Log In To Facebook \t|  \t|\n| loginOptions \t| object \t| {scope: \'email\'} \t| all options listed on [Facebook Docs](https://developers.facebook.com/docs/reference/javascript/FB.login/v2.9) are passable with camelCase. e.g : {returnScopes: false} \t|\n| logoutLabel \t| string \t| Log out from Facebook \t|   \t|\n\nEvents\n======\n\n| Event              | Output | Description                                                 |\n|--------------------|--------|-------------------------------------------------------------|\n| get-initial-status | Object | TO BE DEPRECATED. Initial Check to decide weather the user already connected. |\n| sdkLoaded | Object | returns an object with the following keys: <br> <b>isConnected</b>: Boolean. is the User conneted? <br> <b>FB:</b> the api object. |\n| click              |        | The Component has been clicked.                             |\n| login              | Object | User tried to login                                         |\n| logout             | Object | User tried to logout                                        |\n\n\nDevelopment\n======\n\n- running the example on dev server `npm start`. this will run the example app.\n\nTests\n======\n\ntests will be added hopefully soon.\n\nContribute\n======\nI welcome any kind of contributions/requests/questions/general feedback.\npossible methods to contact me:\n\n1. [open an Issue](https://github.com/iliran11/facebook-login-vue/issues)\n2. send me a mail: iliran11@gmail.com\n3. [contact me on facebook](https://www.facebook.com/Liran.Co.1984)\n',
+18 silly publish   readmeFilename: 'README.md',
+18 silly publish   gitHead: '9dd2d866d06748b15bc2307dce1c7f104b83785e',
+18 silly publish   _id: '@micio86dev/vue-fb-login@1.0.0' }
+19 verbose getPublishConfig undefined
+20 silly mapToRegistry name @micio86dev/vue-fb-login
+21 silly mapToRegistry scope (from package name) @micio86dev
+22 verbose mapToRegistry no registry URL found in name for scope @micio86dev
+23 silly mapToRegistry using default registry
+24 silly mapToRegistry registry https://registry.npmjs.org/
+25 silly mapToRegistry uri https://registry.npmjs.org/@micio86dev%2fvue-fb-login
+26 verbose publish registryBase https://registry.npmjs.org/
+27 silly publish uploading /home/micio/.npm/@micio86dev/vue-fb-login/1.0.0/package.tgz
+28 verbose request uri https://registry.npmjs.org/@micio86dev%2fvue-fb-login
+29 verbose request sending authorization for write operation
+30 info attempt registry request try #1 at 14:26:38
+31 verbose request using bearer token for auth
+32 verbose request id 8d59bf89ad4a3dd4
+33 http request PUT https://registry.npmjs.org/@micio86dev%2fvue-fb-login
+34 http 403 https://registry.npmjs.org/@micio86dev%2fvue-fb-login
+35 verbose headers { date: 'Tue, 02 Apr 2019 13:26:39 GMT',
+35 verbose headers   'content-type': 'application/json',
+35 verbose headers   'transfer-encoding': 'chunked',
+35 verbose headers   connection: 'keep-alive',
+35 verbose headers   'set-cookie':
+35 verbose headers    [ '__cfduid=deee915dcccf9743219b2ab2455cffc791554211598; expires=Wed, 01-Apr-20 13:26:38 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+35 verbose headers   'cf-ray': '4c1322bb7c4ca6fb-DUB',
+35 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+35 verbose headers   vary: 'Accept-Encoding',
+35 verbose headers   server: 'cloudflare',
+35 verbose headers   'content-encoding': 'gzip' }
+36 verbose request invalidating /home/micio/.npm/registry.npmjs.org/_40micio86dev_252fvue-fb-login on PUT
+37 error publish Failed PUT 403
+38 verbose stack Error: you must verify your email before publishing a new package: https://www.npmjs.com/email-edit : @micio86dev/vue-fb-login
+38 verbose stack     at makeError (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+38 verbose stack     at CachingRegistryClient.<anonymous> (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+38 verbose stack     at /usr/share/npm/node_modules/npm-registry-client/lib/request.js:178:7
+38 verbose stack     at Gunzip.onEnd (zlib.js:131:5)
+38 verbose stack     at emitNone (events.js:111:20)
+38 verbose stack     at Gunzip.emit (events.js:208:7)
+38 verbose stack     at endReadableNT (_stream_readable.js:1064:12)
+38 verbose stack     at _combinedTickCallback (internal/process/next_tick.js:138:11)
+38 verbose stack     at process._tickCallback (internal/process/next_tick.js:180:9)
+39 verbose statusCode 403
+40 verbose pkgid @micio86dev/vue-fb-login
+41 verbose cwd /home/micio/Scrivania/facebook-login-vuejs
+42 error Linux 4.15.0-46-generic
+43 error argv "/usr/bin/node" "/usr/bin/npm" "publish" "--access" "public"
+44 error node v8.10.0
+45 error npm  v3.5.2
+46 error code E403
+47 error you must verify your email before publishing a new package: https://www.npmjs.com/email-edit : @micio86dev/vue-fb-login
+48 error If you need help, you may report this error at:
+48 error     <https://github.com/npm/npm/issues>
+49 verbose exit [ 1, true ]
