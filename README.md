@@ -1,4 +1,4 @@
-[![npm](https://img.shields.io/npm/dm/facebook-login-vuejs.svg)](https://www.npmjs.com/package/facebook-login-vuejs)
+[![npm](https://img.shields.io/npm/dm/vue-fb-login.svg)](https://www.npmjs.com/package/vue-fb-login)
 
 Description
 ======
@@ -16,7 +16,7 @@ Installation
 ======
 
 ```
-npm i facebook-login-vuejs
+npm i vue-fb-login
 ```
 
 Example Usage
@@ -25,7 +25,7 @@ Example Usage
 **my-component.vue**
 
 ```javascript
-import facebookLogin from 'facebook-login-vuejs';
+import facebookLogin from 'vue-fb-login';
 
 Vue.component('my-component', {
     components: {

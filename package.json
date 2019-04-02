@@ -1,18 +1,18 @@
 {
   "_args": [
     [
-      "facebook-login-vuejs@^2.1.3",
+      "vue-fb-login@^1.0.0",
       "/home/micio/Scrivania/Progetti/vinci-il-coniglietto-client"
     ]
   ],
-  "_from": "facebook-login-vuejs@>=2.1.3 <3.0.0",
+  "_from": "vue-fb-login@>=1.0.0 <3.0.0",
   "_inCache": true,
   "_installable": true,
-  "_location": "/facebook-login-vuejs",
+  "_location": "/vue-fb-login",
   "_nodeVersion": "7.10.1",
   "_npmOperationalInternal": {
     "host": "s3://npm-registry-packages",
-    "tmp": "tmp/facebook-login-vuejs-2.1.3.tgz_1504959165631_0.10133141069673002"
+    "tmp": "tmp/vue-fb-login-1.0.0.tgz_1504959165631_0.10133141069673002"
   },
   "_npmUser": {
     "email": "iliran11@gmail.com",
@@ -21,8 +21,8 @@
   "_npmVersion": "4.2.0",
   "_phantomChildren": {},
   "_requested": {
-    "name": "facebook-login-vuejs",
-    "raw": "facebook-login-vuejs@^2.1.3",
+    "name": "vue-fb-login",
+    "raw": "vue-fb-login@^1.0.0",
     "rawSpec": "^2.1.3",
     "scope": null,
     "spec": ">=2.1.3 <3.0.0",
@@ -31,10 +31,10 @@
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/facebook-login-vuejs/-/facebook-login-vuejs-2.1.3.tgz",
+  "_resolved": "https://registry.npmjs.org/vue-fb-login/-/vue-fb-login-1.0.0.tgz",
   "_shasum": "6f76310335336a2e1c273b531f0315a744089914",
   "_shrinkwrap": null,
-  "_spec": "facebook-login-vuejs@^2.1.3",
+  "_spec": "vue-fb-login@^1.0.0",
   "_where": "/home/micio/Scrivania/Progetti/vinci-il-coniglietto-client",
   "author": "iliran11",
   "browserslist": [
@@ -117,7 +117,7 @@
   },
   "dist": {
     "shasum": "6f76310335336a2e1c273b531f0315a744089914",
-    "tarball": "https://registry.npmjs.org/facebook-login-vuejs/-/facebook-login-vuejs-2.1.3.tgz"
+    "tarball": "https://registry.npmjs.org/vue-fb-login/-/vue-fb-login-1.0.0.tgz"
   },
   "engines": {
     "node": ">= 4.0.0",
@@ -127,7 +127,7 @@
   "maintainers": [
     "iliran11 <iliran11@gmail.com>"
   ],
-  "name": "@micio86dev/facebook-login-vuejs",
+  "name": "@micio86dev/vue-fb-login",
   "optionalDependencies": {},
   "private": false,
   "scripts": {
