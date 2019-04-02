@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" :ref="ref">
     <button @click="buttonClicked">
       <div class="spinner"
         v-if="isWorking"> </div>
@@ -13,6 +13,7 @@ import { loadFbSdk, getLoginStatus, fbLogout, fbLogin } from './helpers.js'
 import icon from './icon.png'
 export default {
   name: 'facebook-login',
+  props: ['ref'],
   data() {
     return {
       isWorking: false,
