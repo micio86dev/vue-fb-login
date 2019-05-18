@@ -899,16 +899,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   },
 
   computed: {
-    getButtonText: function getButtonText() {
-      switch (this.isConnected) {
-        case true:
-          return this.logoutLabel;
-        case false:
-          return this.loginLabel;
-        default:
-          return 'this is default';
-      }
-    }
   },
   methods: {
     buttonClicked: function buttonClicked() {

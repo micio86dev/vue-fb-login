@@ -2,13 +2,6 @@
   <div class="container" :ref="ref">
     <div id="fb-root"></div>
     <div class="fb-login-button" @click="buttonClicked" data-size="large" data-button-type="login_with" data-auto-logout-link="true" data-use-continue-as="false"></div>
-
-    <button class="fb-login-button" @click="buttonClicked">
-      <div class="spinner"
-        v-if="isWorking"> </div>
-      <img :src="icon"
-        v-if="!isWorking"> {{getButtonText}}
-    </button>
   </div>
 </template>
 
@@ -39,14 +32,6 @@ export default {
       type: String,
       default: 'v3.3'
     },
-    logoutLabel: {
-      type: String,
-      default: 'Log out from Facebook'
-    },
-    loginLabel: {
-      type: String,
-      default: 'Log In To Facebook'
-    },
     loginOptions: {
       type: Object,
       default: function() {
@@ -57,16 +42,6 @@ export default {
     }
   },
   computed: {
-    getButtonText() {
-      switch (this.isConnected) {
-        case true:
-          return this.logoutLabel;
-        case false:
-          return this.loginLabel;
-        default:
-          return 'this is default';
-      }
-    }
   },
   methods: {
     buttonClicked() {
@@ -124,45 +99,3 @@ export default {
   }
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-button {
-  position: relative;
-  padding: 0 15px 0px 46px;
-  border: none;
-  line-height: 34px;
-  font-size: 16px;
-  color: #FFF;
-  min-width: 225px;
-  background-image: linear-gradient(#4C69BA, #3B55A0);
-}
-
-.spinner {
-  box-sizing: border-box;
-  width: 30px;
-  height: 90%;
-  border-radius: 50%;
-  border: 5px solid #f3f3f3;
-  border-top: 5px solid #3498db;
-  animation: spin 2s linear infinite;
-  position: absolute;
-  left: 5px;
-}
-
-img {
-  position: absolute;
-  top: 3px;
-  left: 10px;
-  width: 30px;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-</style>
