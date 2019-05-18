@@ -1,6 +1,9 @@
 <template>
   <div class="container" :ref="ref">
-    <button @click="buttonClicked">
+    <div id="fb-root"></div>
+    <div class="fb-login-button" @click="buttonClicked" data-size="large" data-button-type="login_with" data-auto-logout-link="true" data-use-continue-as="false"></div>
+
+    <button class="fb-login-button" @click="buttonClicked">
       <div class="spinner"
         v-if="isWorking"> </div>
       <img :src="icon"
@@ -8,17 +11,49 @@
     </button>
   </div>
 </template>
+
+<script async defer crossorigin="anonymous" :src="`https://connect.facebook.net/it_IT/sdk.js#xfbml=1&version=${version}&appId=${appId}&autoLogAppEvents=1`"></script>
+
 <script>
 import { loadFbSdk, getLoginStatus, fbLogout, fbLogin } from './helpers.js'
 import icon from './icon.png'
 export default {
   name: 'facebook-login',
-  props: ['ref'],
   data() {
     return {
       isWorking: false,
       isConnected: false,
       icon
+    };
+  },
+  props: {
+    ref: {
+      type: String,
+      required: false
+    },
+    appId: {
+      type: String,
+      required: true
+    },
+    version: {
+      type: String,
+      default: 'v3.3'
+    },
+    logoutLabel: {
+      type: String,
+      default: 'Log out from Facebook'
+    },
+    loginLabel: {
+      type: String,
+      default: 'Log In To Facebook'
+    },
+    loginOptions: {
+      type: Object,
+      default: function() {
+        return {
+          scope: 'email'
+        }
+      }
     }
   },
   computed: {
@@ -43,16 +78,13 @@ export default {
       }
     },
     logout() {
-      console.log('Ok logout DAIII');
       this.isWorking = true;
       fbLogout()
         .then(response => {
-          console.log('Ok logout DAIII AZZZZ');
           this.isWorking = false;
           this.isConnected = false;
           this.$emit('logout', response)
-        }
-        );
+        });
     },
     login() {
       this.isWorking = true;
@@ -67,34 +99,8 @@ export default {
           this.$emit('login', {
             response,
             FB: window.FB
-          })
+          });
         });
-    }
-  },
-  props: {
-    appId: {
-      type: String,
-      required: true
-    },
-    version: {
-      type: String,
-      default: 'v2.10'
-    },
-    logoutLabel: {
-      type: String,
-      default: 'Log out from Facebook'
-    },
-    loginLabel: {
-      type: String,
-      default: 'Log In To Facebook'
-    },
-    loginOptions: {
-      type: Object,
-      default: function() {
-        return {
-          scope: 'email'
-        }
-      }
     }
   },
   mounted() {
